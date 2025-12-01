@@ -13,9 +13,11 @@ public class Dev {
     // private Laptop laptop = new Laptop();
     // note 04b
     @Autowired // this is a field injection
-    // private Laptop laptop;
+    // together with 04b
+    private Laptop laptop;
     // note 9b
     // note 11
+    @Autowired
     @Qualifier("laptop")
     private Computer comp;
 
@@ -37,6 +39,7 @@ public class Dev {
         // laptop.compile();
         // note 9b
         comp.compile();
+        // laptop.compile();
         System.out.println("working on a project");
     }
 }
